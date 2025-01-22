@@ -10,7 +10,7 @@
     "start": "wsl docker compose --env-file .env.example up -d --build",
     "restart": "wsl docker compose --env-file .env.example up --force-recreate --build -d",
     "stop": "wsl docker compose --env-file .env.example stop",
-    "clean": "wsl docker compose  .env.example down -v"
+    "clean": "wsl docker compose --env-file .env.example down -v"
   },
   "dependencies": {
     "db-migrate": "^0.11.14",
